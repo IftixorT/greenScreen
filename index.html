@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <h1>Green Screen Tutorial</h1>
+
+    <div class="main">
+        <canvas id="img1"></canvas>
+        <canvas id="img2"></canvas>
+    </div>
+
+    <div class="main">
+        <div class="forwardImage">
+            Green image:
+            <input type="file" id="fgFile" multiple="false" onchange="frontImg()">
+        </div>
+        <div class="backgroundImage">
+            Background image:
+            <input type="file" id="bgFile" multiple="false" onchange="backImg()">
+        </div>
+    </div>
+
+
+    <div class="buttonArea">
+        <button type="button" class="apply" onclick="resultImg()" value="Apply image">
+            Apply
+        </button>
+    </div>
+
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
